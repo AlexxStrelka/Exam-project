@@ -1,0 +1,88 @@
+& {
+	
+	background-color: $color1;
+
+	h1 {
+		padding: 27px 0 0 0;
+		text-align: center;
+		font-family: 'Montserrat-Bold', sans-serif;
+		font-size: 22px;
+		color: $color3;
+	}
+
+			 figure {
+
+			 		margin: auto;
+			 		position: relative;
+			 		width: 215px;
+			 		padding: 18px 0 0 0;
+			 		text-align: center;
+
+			 		img {
+			 			border-radius: 70px;
+			 		}
+
+			 		span {
+			 		 position: absolute;
+			 		 z-index: 99;
+			 		 width: 42px;
+			 		 height: 43px;
+			 		 top: 108px;
+    			 right: 45px;
+
+			 			&.TVicon { background: url(img/meetPartnerIcon_sprite.png) 0px -126px no-repeat; }
+			 			&.bottleIcon { background: url(img/meetPartnerIcon_sprite.png) 0px -43px no-repeat; }
+			 			&.cupIcon { background: url(img/meetPartnerIcon_sprite.png) 0px -86px no-repeat; }
+			 			&.planeIcon { background: url(img/meetPartnerIcon_sprite.png) 0px 0px no-repeat; }
+
+
+			 		}
+
+			 		h2 {
+			 				padding: 20px 0 0 0;
+
+				 			a {
+						 			text-decoration: none;
+						 			font-family: 'Montserrat-Bold', sans-serif;
+									font-size: 14px;
+									color: $color3;
+							}
+			 		}
+
+			 		figcaption {
+			 			padding: 13px 0 0 0;
+			 			font-family: 'Roboto-Light', sans-serif;
+						font-size: 14px;
+						color: $color4;
+			 		}
+
+			 }//figure
+
+
+			a.partner_link {
+				display: block;
+				width: 278px;
+				height: 36px;
+				margin:auto;
+				margin-top: 25px;
+				text-decoration: none;
+				text-align: center;
+				line-height: 31px;
+				background-color: $color1;
+				border-radius: 20px;
+				border: solid 2px $color2;
+				transition: color $transitionDuration, background-color $transitionDuration;
+				font: {
+					family: 'Montserrat-Bold', sans-serif;
+					size: 14px;
+				}
+				color: $color2;
+
+						&:hover {
+								background-color: $color2;
+				        color: $color1;
+						}
+			}	
+
+				
+}//&

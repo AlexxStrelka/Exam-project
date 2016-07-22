@@ -1,0 +1,102 @@
+& {
+	
+position: relative;
+//padding: 230px 0;
+height: 700px;
+background: url(img/header_bg.jpg) center no-repeat; 
+background-size: cover;
+
+ .LoginArea {
+  display: inline-block;
+  float: right;
+  width: 441px;
+  height: 60px;
+  padding: 35px 240px 0 0;
+  
+
+  		a {
+  			display: inline-block;
+  			width: 75px;
+				height: 36px;
+  			text-decoration: none;
+				cursor: pointer;
+				color: $color1;
+				border: solid 2px transparent;
+				border-radius: 20px;	
+				text-align: center;
+				padding-top: 9px;
+				transition: border-color $transitionDuration;
+				
+					font: {
+						family: 'Montserrat-Bold', sans-serif;
+						size: 14px;
+					}
+
+								&:hover {
+			                border-color: $color1;
+			            }
+
+								&.signUp {
+									width: 85px;
+								}
+			
+
+				}
+
+		}
+
+h1 {
+  display: inline-block;
+	padding: 45px 0 0 236px;
+	font-family: 'Montserrat-Bold', sans-serif;
+	font-size: 20px;
+	letter-spacing: 2px;
+	color: $color1;
+}
+
+h2 {
+	padding-top: 165px;
+	text-align: center;
+	line-height: 60px;
+	text-transform: uppercase;
+	font-family: 'Montserrat-Bold', sans-serif;
+	font-size: 52px;
+	color: $color1;
+}
+
+h3 {
+	padding-top: 30px;
+	text-align: center;
+	font-family: 'Roboto-Thin', sans-serif;
+	font-size: 24px;
+	color: $color1;
+	
+}
+
+.findButton {
+	padding-top: 35px;
+	text-align: center;
+		a {
+			width: 220px;
+			height: 40px;
+		  text-align: center;
+		  padding-top: 12px;
+		  display: inline-block;
+			text-decoration: none;
+			cursor: pointer;
+			color: $color1;
+			background-color: $color2;
+			border-radius: 20px;
+			transition: color $transitionDuration, background-color $transitionDuration;
+			font: {
+						family: 'Montserrat-Bold', sans-serif;
+						size: 14px;
+			}
+			&:hover {
+          background-color: $color1;
+          color: $color2;
+      }
+		}
+}
+
+}

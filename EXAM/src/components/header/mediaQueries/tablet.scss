@@ -1,0 +1,26 @@
+@media #{$tablet} {
+	@import '../desktop'; //Closer to desktop variant+several corrections
+
+		.LoginArea {
+		  padding: 35px 54px 0 0;
+		  width: 220px;
+		}
+
+		h1 {
+		  padding: 45px 0 0 46px;
+		}
+
+		h2 {
+			padding-top: 155px;
+		}
+
+		h3 {
+			padding-top: 20px;
+		}
+
+		.findButton {
+			padding-top: 37px;
+		}
+
+
+}

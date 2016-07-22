@@ -1,0 +1,135 @@
+& {
+	
+background-color: $color1;
+
+
+		h1 {
+		padding: 90px 0 33px 0;
+		text-align: center;
+		font-family: 'Montserrat-Bold', sans-serif;
+		font-size: 22px;
+		color: $color3;
+		}
+  .carousel-wrapper-block {
+  		width: 940px;
+  		margin: auto;
+
+
+			.carousel-wrapper {
+					width: 300px;
+					display: inline-block;
+					padding-rigth: 20px;
+		    		
+
+					.jcarousel {
+						width: 300px;
+						height: 410px;
+						margin: auto;
+						position: relative; //область видимости карусели для плагина jcarousel
+		        overflow: hidden;
+
+		        ul {
+					    width: 20000em;
+					    position: relative; //Optional, required in this case since it's a <ul> element
+					  }
+
+						.jcarousel__item {
+							width: 300px;
+							height: 400px;
+							//margin: auto;
+							display: inline-block;
+							margin-bottom: 0px;
+
+								&.step1 {
+								background: url(img/step1_desk.jpg) center no-repeat;
+								}
+								&.step2 {
+								background: url(img/step2_desk.jpg) center no-repeat;
+								
+								  h2 {margin-top: 28px !important;}
+								  
+								}
+								&.step3 {
+								background: url(img/step3_desk.jpg) center no-repeat;
+								}
+
+						span {
+							position: relative;
+							display: block;
+							padding: 228px 0 0 20px;
+							width: 300px;
+						  height: 400px;
+
+								a {
+									text-decoration: none;
+									cursor: pointer;
+									color: $color1;
+
+															
+											&.step_link {
+												display: block;
+												width: 70px;
+												height: 19px;
+												text-align: center;
+												padding-top: 5px;
+												background-color: $color2;
+												border-radius: 20px;
+												font: {
+													family: 'Montserrat-Regular', sans-serif;
+													size: 10px;
+												}
+												text-transform: uppercase;
+												letter-spacing: 1px;
+												transition: color $transitionDuration, background-color $transitionDuration;
+
+												&:hover {
+													background-color: $color1;
+				          				color: $color2;
+												}
+											}
+									}// a
+
+									h2 {
+										display: block;
+										width: 200px;
+										padding-top: 16px;
+										font-family: 'Montserrat-Bold', sans-serif;
+										font-size: 24px;
+										line-height: 29px;
+										color: $color1;
+									}
+
+									p {
+										padding-top: 18px;
+										display: block;
+										width: 260px;
+										font-family: 'Roboto-Thin', sans-serif;
+										font-size: 14px;
+										line-height: 16px;
+										color: $color1;
+									}
+
+							
+								} //span
+
+						}// jcarousel__item
+
+							.leftArrow {
+								display: block;
+								position: absolute;
+								top: 150px;
+								left: 20px;
+							}
+							.rightArrow {
+								display: block;
+								position: absolute;
+								top: 150px;
+								right: 20px;
+								}
+
+						} //jcarousel
+		}//carousel-wrapper
+	}//carousel-wrapper-block
+
+				
+}//&
