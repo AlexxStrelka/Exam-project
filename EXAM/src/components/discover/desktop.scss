@@ -1,0 +1,98 @@
+& {
+	
+background-color: $color1;
+
+
+		h1 {
+		padding: 100px 0 33px 0;
+		text-align: center;
+		font-family: 'Montserrat-Bold', sans-serif;
+		font-size: 22px;
+		color: $color3;
+		clear: both;
+		}
+  
+		//ISOTOPE Items style..........................................
+
+		.isotope-contaner {
+				height: 970px;
+				width: 1940px;
+				margin: auto;
+
+				.isotope {
+					//height: 970px;
+					//width: 940px;
+					
+					
+
+					.item { 
+								position: relative;
+								float: left;
+								
+
+								img {
+								border-radius: 15px;
+								width: 60%;
+								height: 60%;
+								padding: 10px 10px 10px 10px;
+								}
+
+								a {
+									display: block;
+									position: absolute;
+									top: 20px;
+									left: 40px;
+									text-decoration: none;
+									font-family: 'Montserrat-Bold', sans-serif;
+									font-size: 22px;
+									color: $color1;
+								}
+						}
+
+				}//isotope
+     }//isotope-contaner
+
+
+
+
+		p {
+			text-align: center;
+			font-family: 'Roboto-Light', sans-serif;
+			font-size: 18px;
+			color: $color3;	
+			padding: 0 0 40px 0;
+		}
+
+		form {
+			margin: auto;
+			text-align: center;
+
+			input {
+				width: 238px;
+				height: 39px; 
+				font-family: 'Roboto-Light', sans-serif;
+				font-size: 14px;
+				color: $color6;
+				margin-bottom: 11px;
+				margin-right: 12px;
+				padding-left: 15px;
+				border: none;
+				border: solid 1px $color6;
+				border-radius: 3px;
+			}
+
+			button {
+				background-color: $color2;
+				border: solid 2px $color2;
+				border-radius: 20px;
+				width: 159px;
+				height: 39px;
+				color: $color1;
+				font-family: 'Montserrat-Bold', sans-serif;
+				font-size: 14px;
+				text-align: center;
+			}
+		}
+
+				
+}//&

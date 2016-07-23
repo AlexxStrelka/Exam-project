@@ -1,0 +1,62 @@
+& {
+	
+	background-color: $color1;
+
+
+		h1 {
+		display: block;
+		padding-top: 39px;
+		padding-bottom: 19px;
+		text-align: center;
+		font-family: 'Montserrat-Bold', sans-serif;
+		font-size: 22px;
+		color: $color3;
+		}
+
+
+
+
+
+
+		p {
+			text-align: center;
+			font-family: 'Roboto-Light', sans-serif;
+			font-size: 18px;
+			color: $color3;	
+			padding: 0 0 16px 0;
+		}
+
+		form {
+			margin: auto;
+			text-align: center;
+
+			input {
+				width: 278px;
+				height: 39px; 
+				font-family: 'Roboto-Light', sans-serif;
+				font-size: 14px;
+				color: $color6;
+				margin-bottom: 11px;
+				padding-left: 15px;
+				border: none;
+				border: solid 1px $color6;
+				border-radius: 3px;
+			}
+
+			button {
+				background-color: $color2;
+				border: solid 2px $color2;
+				border-radius: 20px;
+				width: 278px;
+				height: 39px;
+				color: $color1;
+				font-family: 'Montserrat-Bold', sans-serif;
+				font-size: 14px;
+				text-align: center;
+			}
+		}
+
+	
+
+				
+}//&

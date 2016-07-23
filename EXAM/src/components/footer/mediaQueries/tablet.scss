@@ -1,0 +1,21 @@
+@media #{$tablet} {
+	@import '../desktop'; //Closer to desktop variant+several corrections
+
+		h1 {
+			padding: 35px 0 0 40px;
+		}
+
+		h2 {
+			padding: 35px 0 0 100px;
+		}
+
+		nav {
+			padding: 35px 0 0 72px;
+		}
+		
+		.designedBy {
+				padding: 35px 37px 0 0;
+		}
+		
+
+}

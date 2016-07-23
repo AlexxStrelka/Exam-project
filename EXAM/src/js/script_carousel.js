@@ -15,9 +15,12 @@ $(function() {
 
   $step1.touchwipe({
     wipeLeft: function(event, direction, distance, duration, fingerCount) {   
+      console.log("wipe");
       $step1.jcarousel('scroll', '+=1');
+      console.log("wipe");
     },
     wipeRight: function(event, direction, distance, duration, fingerCount) {
+      console.log("wipe");
       $step1.jcarousel('scroll', '-=1');
     }
   });
