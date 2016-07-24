@@ -12,7 +12,7 @@ $(function() {
 	
 //Добавляем ключевое слово поиска к URL запроса and KEY
 	var APIkey = '2968420-d00a0636cd5a05d99ce5547d4';
-	var urlik = "https://pixabay.com/api/?key="+APIkey+"&q="+ $searchInput + "&per_page=20";
+	var urlik = "https://pixabay.com/api/?key="+APIkey+"&q="+ $searchInput + "&per_page=9";
   console.log("URL = ", urlik);
 
 
@@ -46,7 +46,7 @@ console.log("imageContainer", imageContainer);
 var $container = $('.isotope').imagesLoaded( function() {
   $container.isotope({
     masonryHorizontal : {
-    rowHeight : 360
+    rowHeight : 970
   }
   });
 });
