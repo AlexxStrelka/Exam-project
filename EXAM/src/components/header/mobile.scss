@@ -5,7 +5,7 @@ height: 537px;
 background: url(img/headerMobile_bg.jpg) center no-repeat; 
 
   .LoginArea {
-  width: 170px;
+  width: 180px;
   height: 60px;
   margin: auto;
   padding-top: 18px;
@@ -13,7 +13,7 @@ background: url(img/headerMobile_bg.jpg) center no-repeat;
 
   		a {
   			display: inline-block;
-  			width: 75px;
+  			width: 72px;
 				height: 36px;
   			text-decoration: none;
 				cursor: pointer;
@@ -46,14 +46,14 @@ background: url(img/headerMobile_bg.jpg) center no-repeat;
 h1 {
 	padding-top: 115px;
 	text-align: center;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	font-family: 'Montserrat-Bold', sans-serif;
 	font-size: 20px;
 	color: $color1;
 }
 
 h2 {
-	padding-top: 38px;
+	padding-top: 29px;
 	text-align: center;
 	line-height: 35px;
 	text-transform: uppercase;

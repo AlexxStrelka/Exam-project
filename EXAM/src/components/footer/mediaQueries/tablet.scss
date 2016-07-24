@@ -1,20 +1,22 @@
 @media #{$tablet} {
 	@import '../desktop'; //Closer to desktop variant+several corrections
 
+margin-top: 91px;
+
 		h1 {
-			padding: 35px 0 0 40px;
+			padding: 38px 0 0 38px;
 		}
 
 		h2 {
-			padding: 35px 0 0 100px;
+			padding: 38px 0 0 104px;
 		}
 
 		nav {
-			padding: 35px 0 0 72px;
+			padding: 38px 0 0 81px;
 		}
 		
 		.designedBy {
-				padding: 35px 37px 0 0;
+				padding: 38px 40px 0 0;
 		}
 		
 

@@ -4,7 +4,7 @@ background-color: $color1;
 
 
 		h1 {
-		padding: 100px 0 33px 0;
+		padding: 100px 10px 27px 0;
 		text-align: center;
 		font-family: 'Montserrat-Bold', sans-serif;
 		font-size: 22px;
@@ -15,32 +15,27 @@ background-color: $color1;
 		//ISOTOPE Items style..........................................
 
 		.isotope-contaner {
-				height: 970px;
-				width: 1940px;
 				margin: auto;
 
 				.isotope {
-					//height: 970px;
-					//width: 940px;
-					
-					
+										
 
 					.item { 
 								position: relative;
+								width: 33%;
 								float: left;
 								
 
 								img {
+								width: 100%;
 								border-radius: 15px;
-								width: 60%;
-								height: 60%;
 								padding: 10px 10px 10px 10px;
 								}
 
 								a {
 									display: block;
 									position: absolute;
-									top: 20px;
+									top: 50%;
 									left: 40px;
 									text-decoration: none;
 									font-family: 'Montserrat-Bold', sans-serif;
@@ -60,7 +55,7 @@ background-color: $color1;
 			font-family: 'Roboto-Light', sans-serif;
 			font-size: 18px;
 			color: $color3;	
-			padding: 0 0 40px 0;
+			padding: 7px 17px 41px 8px;
 		}
 
 		form {
@@ -74,8 +69,8 @@ background-color: $color1;
 				font-size: 14px;
 				color: $color6;
 				margin-bottom: 11px;
-				margin-right: 12px;
-				padding-left: 15px;
+		    margin-right: 14px;
+		    padding-left: 14px;
 				border: none;
 				border: solid 1px $color6;
 				border-radius: 3px;
@@ -85,8 +80,9 @@ background-color: $color1;
 				background-color: $color2;
 				border: solid 2px $color2;
 				border-radius: 20px;
-				width: 159px;
-				height: 39px;
+				width: 158px;
+		    height: 40px;
+		    margin-right: 10px;
 				color: $color1;
 				font-family: 'Montserrat-Bold', sans-serif;
 				font-size: 14px;

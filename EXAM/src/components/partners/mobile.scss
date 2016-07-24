@@ -3,7 +3,9 @@
 	background-color: $color1;
 
 	h1 {
-		padding: 27px 0 0 0;
+		padding: 39px 0 0;
+    width: 312px;
+    line-height: 24px;
 		text-align: center;
 		font-family: 'Montserrat-Bold', sans-serif;
 		font-size: 22px;
@@ -15,7 +17,7 @@
 			 		margin: auto;
 			 		position: relative;
 			 		width: 215px;
-			 		padding: 18px 0 0 0;
+			 		padding: 26px 0 0px 0;
 			 		text-align: center;
 
 			 		img {
@@ -39,7 +41,7 @@
 			 		}
 
 			 		h2 {
-			 				padding: 20px 0 0 0;
+			 				padding: 13px 0 0 0;
 
 				 			a {
 						 			text-decoration: none;
@@ -50,7 +52,7 @@
 			 		}
 
 			 		figcaption {
-			 			padding: 13px 0 0 0;
+			 			padding: 16px 0 0 0;
 			 			font-family: 'Roboto-Light', sans-serif;
 						font-size: 14px;
 						color: $color4;
@@ -61,13 +63,12 @@
 
 			a.partner_link {
 				display: block;
-				width: 278px;
-				height: 36px;
-				margin:auto;
-				margin-top: 25px;
-				text-decoration: none;
+				width: 280px;
+		    height: 41px;
+		    margin: 34px auto auto;
+    		text-decoration: none;
 				text-align: center;
-				line-height: 31px;
+				line-height: 35px;
 				background-color: $color1;
 				border-radius: 20px;
 				border: solid 2px $color2;

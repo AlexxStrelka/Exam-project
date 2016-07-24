@@ -1,10 +1,25 @@
 @media #{$tablet} {
 	@import '../desktop'; //Closer to desktop variant+several corrections
 
-		
-		p {
-			padding: 5px 0 40px 0;
+		h1 {
+			padding: 99px 4px 27px 0;
 		}
+
+		p {
+			padding: 9px 0 40px;
+		}
+
+		input {
+				
+		    margin-right: 0px;
+		    
+			}
+
+			button {
+				
+		    margin-right: 3px;
+				
+			}
 
 		
 

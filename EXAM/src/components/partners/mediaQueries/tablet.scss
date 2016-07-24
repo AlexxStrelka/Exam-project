@@ -4,17 +4,21 @@
 	width: 492px;
 	margin: auto;
 
-	
+	h1 {
+	padding: 96px 5px 31px 0;
+	}
 
 .partner {
 		
 		 figure {
 	
-			 		
+			 	width: 248px;
+    		height: 257px;
+    		margin: 0px -15px 0 10px;	
 			 		
 
 			 		h2 {
-			 				padding: 0 0 20px 0;
+			 				padding: 2px 38px 15px 4px;
 
 				 	}
 
@@ -23,5 +27,9 @@
 
 	}//partner
 		
-
+				a.partner_link {
+						width: 192px;
+				    height: 39px;
+				    margin: 15px auto auto;
+		    }
 }

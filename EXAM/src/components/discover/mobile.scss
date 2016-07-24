@@ -5,15 +5,49 @@
 
 		h1 {
 		display: block;
-		padding-top: 39px;
-		padding-bottom: 19px;
+		padding-top: 35px;
+    line-height: 25px;
+		padding-bottom: 4px;
 		text-align: center;
 		font-family: 'Montserrat-Bold', sans-serif;
 		font-size: 22px;
 		color: $color3;
 		}
 
+			//ISOTOPE Items style..........................................
 
+					.isotope-contaner {
+							margin: auto;
+
+							.isotope {
+													
+
+								.item { 
+											position: relative;
+											width: 100%;
+											//float: left;
+											
+
+											img {
+											width: 100%;
+											border-radius: 15px;
+											padding: 10px 10px 10px 10px;
+											}
+
+											a {
+												display: block;
+												position: absolute;
+												top: 50%;
+												left: 40px;
+												text-decoration: none;
+												font-family: 'Montserrat-Bold', sans-serif;
+												font-size: 22px;
+												color: $color1;
+											}
+									}
+
+							}//isotope
+			     }//isotope-contaner
 
 
 
@@ -23,7 +57,7 @@
 			font-family: 'Roboto-Light', sans-serif;
 			font-size: 18px;
 			color: $color3;	
-			padding: 0 0 16px 0;
+			padding: 8px 0 0 0px;
 		}
 
 		form {
@@ -37,6 +71,7 @@
 				font-size: 14px;
 				color: $color6;
 				margin-bottom: 11px;
+				margin-top: 20px;
 				padding-left: 15px;
 				border: none;
 				border: solid 1px $color6;

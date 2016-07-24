@@ -1,12 +1,16 @@
 @media #{$tablet} {
 	@import '../desktop'; //Closer to desktop variant+several corrections
 
+	h1 {
+		    padding: 97px 0px 36px 5px;
+	}
+
 		.carousel-wrapper-block {
   		width: 770px;
   		
 
 			.carousel-wrapper {
-					width: 228px;
+					width: 232px;
 					margin: 0 10px 0 10px;
 					padding-right: 0;
 							    		
@@ -38,7 +42,7 @@
 								}
 
 						span {
-							padding: 210px 0 0 20px;
+							padding: 213px 0 0 18px;
 							width: 228px;
 						  
 								

@@ -1,7 +1,7 @@
 & {
 	
 	height: 200px;
-	margin-top: 100px;
+	margin-top: 89px;
 	background-color: $color1;
 	border-top: solid 4px $color2;
 
@@ -9,7 +9,8 @@
 		h1 {
 		display: block;
 		float: left;
-		padding: 35px 0 0 224px;
+		padding: 38px 0 0 248px;
+    letter-spacing: 1px;
 		font-family: 'Montserrat-Bold', sans-serif;
 		font-size: 16px;
 		color: $color2;
@@ -40,7 +41,7 @@
 			text-align: left;
 			display: block;
 			float: left;
-			padding: 35px 0 0 100px;
+			padding: 38px 0 0 97px;
 
 				h2 {
 				display: block;
@@ -53,7 +54,7 @@
 				a {
 						display: block;
 						text-decoration: none;
-						padding-top: 13px;
+						padding-top: 10px;
 						font-family: 'Roboto-Light', sans-serif;
 						font-size: 14px;
 						color: $color4;
@@ -69,7 +70,7 @@
 		.designedBy {
 			display: block;
 			float: right;
-			padding: 35px 235px 0 0;
+			padding: 37px 254px 0 0;
 			text-align: center;
 			
 

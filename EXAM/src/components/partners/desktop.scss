@@ -2,7 +2,7 @@
 	
 	background-color: $color1;
 	h1 {
-				padding: 95px 0 30px 0;
+				padding: 89px 0 30px;
 				text-align: center;
 				font-family: 'Montserrat-Bold', sans-serif;
 				font-size: 22px;
@@ -16,13 +16,16 @@
 
 			 		display: inline-block;
 			 		position: relative;
-			 		width: 220px;
-			 		height: 240px;
+			 		//width: 220px;
+			 		//height: 240px;
 			 		text-align: center;
+			 		width: 244px;
+			    height: 240px;
+			    margin: 0 -16px 0 8px;
 
 			 		img {
 			 			border-radius: 100%;
-			 			margin-bottom: 20px;
+			 			margin: 0 22px 13px 0;
 			 		}
 
 			 		span {
@@ -30,8 +33,8 @@
 			 		 z-index: 99;
 			 		 width: 42px;
 			 		 height: 43px;
-			 		 top: 86px;
-    			 right: 45px;
+			 		 top: 85px;
+    			 right: 70px;
 
 			 			&.TVicon { background: url(img/meetPartnerIcon_sprite.png) 0px -126px no-repeat; }
 			 			&.bottleIcon { background: url(img/meetPartnerIcon_sprite.png) 0px -43px no-repeat; }
@@ -42,7 +45,7 @@
 			 		}
 
 			 		h2 {
-			 				padding: 0 0 16px 0;
+			 				padding: 1px 29px 17px 2px;
 
 				 			a {
 						 			text-decoration: none;
@@ -57,7 +60,8 @@
 						font-size: 14px;
 						color: $color4;
 						display: block;
-				    height: 59px;
+				    height: 60px;
+    				width: 211px;
 				    overflow: hidden;
 			 		}
 
@@ -67,13 +71,13 @@
 
 			a.partner_link {
 				display: block;
-				width: 185px;
-				height: 36px;
+				width: 194px;
+    		height: 38px;
 				margin:auto;
-				margin-top: 35px;
+				margin-top: 33px;
 				text-decoration: none;
 				text-align: center;
-				line-height: 31px;
+				line-height: 34px;
 				background-color: $color1;
 				border-radius: 20px;
 				border: solid 2px $color2;

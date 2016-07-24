@@ -9,9 +9,9 @@ background-size: cover;
  .LoginArea {
   display: inline-block;
   float: right;
-  width: 441px;
+  width: 420px;
   height: 60px;
-  padding: 35px 240px 0 0;
+  padding: 37px 250px 0 0;
   
 
   		a {
@@ -24,7 +24,7 @@ background-size: cover;
 				border: solid 2px transparent;
 				border-radius: 20px;	
 				text-align: center;
-				padding-top: 9px;
+				padding-top: 11px;
 				transition: border-color $transitionDuration;
 				
 					font: {
@@ -47,15 +47,15 @@ background-size: cover;
 
 h1 {
   display: inline-block;
-	padding: 45px 0 0 236px;
+	padding: 48px 0 0 250px;
 	font-family: 'Montserrat-Bold', sans-serif;
 	font-size: 20px;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	color: $color1;
 }
 
 h2 {
-	padding-top: 165px;
+	padding-top: 150px;
 	text-align: center;
 	line-height: 60px;
 	text-transform: uppercase;
@@ -67,14 +67,14 @@ h2 {
 h3 {
 	padding-top: 30px;
 	text-align: center;
-	font-family: 'Roboto-Thin', sans-serif;
+	font-family: 'Roboto-Light', sans-serif;
 	font-size: 24px;
 	color: $color1;
 	
 }
 
 .findButton {
-	padding-top: 35px;
+	padding-top: 37px;
 	text-align: center;
 		a {
 			width: 220px;
