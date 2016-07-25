@@ -4,7 +4,7 @@
 
 (function($) {
     'use strict';
-console.log("carusel launched");
+//console.log("carusel launched");
     var jCarousel = $.jCarousel = {};
 
     jCarousel.version = '0.3.4';

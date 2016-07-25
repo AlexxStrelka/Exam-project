@@ -1,6 +1,6 @@
 $(function() {
 
-var isotopeApplied = false;
+jQuery.support.cors = true;//For IE 8+
 
 var loadImages = function(searchInput, e){
 	if (e && typeof e != 'undefined') {

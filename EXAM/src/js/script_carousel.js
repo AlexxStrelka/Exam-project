@@ -15,12 +15,10 @@ $(function() {
 
   $step1.touchwipe({
     wipeLeft: function(event, direction, distance, duration, fingerCount) {   
-      console.log("wipe");
       $step1.jcarousel('scroll', '+=1');
-      console.log("wipe");
     },
+
     wipeRight: function(event, direction, distance, duration, fingerCount) {
-      console.log("wipe");
       $step1.jcarousel('scroll', '-=1');
     }
   });
@@ -43,22 +41,6 @@ $(function() {
     }
   });
 
-
-
-
-    // $('.jcarousel-pagination').jcarouselPagination({
-    //     item: function(page) {
-    //         return '<a href="#' + page + '">' + page + '</a>';
-    //     }
-    // });
-
-		// $('.jcarousel').jcarouselAutoscroll({
-  //     interval: 3000,
-  //     target: '+=1',
-  //     autostart: true
-  // 	});
-
-  
 
 });
 

@@ -40,6 +40,8 @@
 		nav {
 			text-align: left;
 			display: block;
+			position: relative;
+    	height: 300px;
 			float: left;
 			padding: 38px 0 0 97px;
 
@@ -51,6 +53,9 @@
 			.nav_links {
 				padding: 6px 0 19px 0;
 				display: block;
+				position: absolute;
+    		top: 55px;
+
 				a {
 						display: block;
 						text-decoration: none;
