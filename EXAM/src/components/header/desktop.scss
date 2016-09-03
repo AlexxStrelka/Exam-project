@@ -1,7 +1,6 @@
 & {
 	
 position: relative;
-//padding: 230px 0;
 height: 700px;
 background: url(img/header_bg.jpg) center no-repeat; 
 background-size: cover;
@@ -17,14 +16,14 @@ background-size: cover;
   		a {
   			display: inline-block;
   			width: 75px;
-				height: 36px;
+				line-height: 36px;
   			text-decoration: none;
 				cursor: pointer;
 				color: $color1;
 				border: solid 2px transparent;
 				border-radius: 20px;	
 				text-align: center;
-				padding-top: 11px;
+				//padding-top: 11px;
 				transition: border-color $transitionDuration;
 				
 					font: {
@@ -78,9 +77,8 @@ h3 {
 	text-align: center;
 		a {
 			width: 220px;
-			height: 40px;
+			line-height: 40px;
 		  text-align: center;
-		  padding-top: 12px;
 		  display: inline-block;
 			text-decoration: none;
 			cursor: pointer;

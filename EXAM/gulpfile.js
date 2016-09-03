@@ -14,12 +14,20 @@ var watch = require('gulp-watch');
 
 gulp.task('sass', function() {
     return sass('src/main.scss')
-        .on('error', sass.logError)
+       .on('error', sass.logError)
         // .pipe(sourceMaps.init({loadMaps: false}))
         .pipe(autoPrefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
         // .pipe(rename('app.css'))
-        .pipe(cleanCSS())
-        // .pipe(sourceMaps.write())
+        //.pipe(cleanCSS())
+        .pipe(sourceMaps.write())
+        .pipe(gulp.dest('build/css'))
+    && sass('src/main-old-ie.scss')    
+       .on('error', sass.logError)
+        // .pipe(sourceMaps.init({loadMaps: false}))
+        .pipe(autoPrefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
+        // .pipe(rename('app.css'))
+        //.pipe(cleanCSS())
+        .pipe(sourceMaps.write())
         .pipe(gulp.dest('build/css'));
 });
 
@@ -40,7 +48,20 @@ gulp.task('images', function(){
 });
 
 gulp.task('scripts', function() {
-    return gulp.src(['src/js/*.js'])
+    return gulp.src([
+            'src/js/isotope.pkgd.min.js',
+            'src/js/jquery.isotope.min.js'
+        ]).pipe(gulp.dest('build/js'))
+        && gulp.src([
+            'src/js/jquery.jcarousel.js',
+            'src/js/jquery.touchwipe.min.js'
+        ])
+        .pipe(concat('libs.js', {newLine: ';'}))
+        .pipe(gulp.dest('build/js'))
+    && gulp.src([
+            'src/js/script_isotope.js',
+            'src/js/script_carousel.js'
+        ])
         .pipe(concat('app.js', {newLine: ';'}))
         .pipe(gulp.dest('build/js'));
 });

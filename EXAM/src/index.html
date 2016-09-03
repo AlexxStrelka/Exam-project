@@ -5,10 +5,20 @@
     <title>Exam GoFrontend 3</title>
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <link type="text/css" rel="stylesheet" href="css/main.css"/>
+    <!--[if lt IE 9]>
+		<link type="text/css" href="css/main-old-ie.css" rel="stylesheet" />
+	<![endif]-->
 
     <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+    <!--[if lt IE 9]>
+		<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<![endif]-->
+	 <script type="text/javascript" src="js/libs.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
-    
+
+        
 <!--[if lt IE 9]>
    <script>
       document.createElement('header');
@@ -17,6 +27,8 @@
       document.createElement('article');
       document.createElement('aside');
       document.createElement('footer');
+      document.createElement('figure');
+	    document.createElement('figcaption');
    </script>
 <![endif]--> 
 
@@ -135,8 +147,8 @@
         <h1>Meet a partner for your best holiday</h1>
         <div class="partner">
             <figure>
-                <img src="css/img/Bradley_Hunter.jpg" alt="Bradley Hunter">
-                <span class="TVicon"></span>
+            	  <img src="css/img/Bradley_Hunter.jpg" alt="Bradley Hunter">
+						    <span class="TVicon"></span>
                 <h2><a href="#">Bradley Hunter</a></h2>
                 <figcaption>
                     Based in Chicago. I love playing tennis and loud music.
@@ -172,14 +184,14 @@
 
     <section class="discoverHoliday">
         <h1>Discover holiday activity ideas</h1>
-        <div class="isotope-contaner">
-        <div class="isotope">
-            <!-- Здесь динамически создаются контейнеры с картинками с помощью скрипта -->
-        </div>
-        </div>
+		        <div class="isotope-contaner">
+				        <div class="isotope">
+				            <!-- Здесь динамически создаются контейнеры с картинками с помощью скрипта -->
+				        </div>
+		        </div>
         <h1>Discover holiday activity ideas</h1>
         <p>Hi! What are your holiday interests?</p>
-        <form action="#" method="GET">
+        <form id="searchPictureForm" action="javascript:void(0)" method="GET">
             <input type="text" placeholder="Enter your interests" name="search" id="searchId">
             <button class="searchBtn">Search partners</button>
         </form>

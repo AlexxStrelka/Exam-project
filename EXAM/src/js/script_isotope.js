@@ -17,37 +17,59 @@ var loadImages = function(searchInput, e){
 	var urlik = "https://pixabay.com/api/?key="+APIkey+"&q="+ searchInput + "&per_page=12";
   
 
-	$.getJSON(urlik, function(data){
-		$('.isotope').remove(); //очищаем от картинок, которые были загружены дефолтно или в предыдущем поиске
-		$('.isotope-contaner').append($('<div class="isotope">'));		
+	$.ajax({
+		url : urlik,
+		dataType : 'jsonp'
+	}).success(
+		function(data){
+			$('.isotope').remove(); //очищаем от картинок, которые были загружены дефолтно или в предыдущем поиске
+			$('.isotope-contaner').append($('<div class="isotope">'));
 
-		var container = $('.isotope');
- 		var dataset = data.hits;
- 		  for (i=0; i<dataset.length; i++) {
-				 	var url = dataset[i].webformatURL;
-				 	var title = dataset[i].tags;
+			var container = $('.isotope');
+			var dataset = data.hits;
+			for (i=0; i<dataset.length; i++) {
+				var url = dataset[i].webformatURL;
+				var title = dataset[i].tags;
 
-				 	var imageContainer = $('<div></div>');
-				 	imageContainer.addClass('item');
-					var image = $('<img/>');
-					image.attr('src', url);
-					image.attr('alt', title);
-					imageContainer.html('<a href="'+url+'" title="'+title+'">'+title+"</a>"); 
+				var imageContainer = $('<div></div>');
+				imageContainer.addClass('item');
+				var subItemsContainer = $('<div></div>');
+				subItemsContainer.addClass('item-image-wrapper');
+				imageContainer.append(subItemsContainer);
 
-					imageContainer.append(image);
-					container.append(imageContainer);
+				var image = $('<img/>');
+				image.attr('src', url);
+				image.attr('alt', title);
+				subItemsContainer.html('<a href="'+url+'" title="'+title+'">'+title+"</a>");
+
+				subItemsContainer.append(image);
+				container.append(imageContainer);
 			}
 
 		// инициализация Isotope после того как все картинки были загружены (imagesLoaded)
-		container.imagesLoaded(
-			function() {
-			  container.isotope({
-				  masonry : {}
-				});
-			}
-		);
+			var images = container.find('img');
+			var imagesToLoad = images.length;
 
-		});//getJSON
+			(function (images, container, jQuery) {
+				images.load(function () {
+					imagesToLoad--;
+					if (imagesToLoad <= 0) {
+						container.isotope({
+							masonry: {  }
+						});
+
+						$(window).smartresize(function(){
+							container.isotope({
+								masonry: {
+
+								}
+							});
+						});
+					}
+				});
+			})(images, container, $);
+
+		});//ajax
 };//loadImage
 
 //Рэндомный набор слов для картинок первой загрузки страницы
@@ -61,7 +83,7 @@ var randomCategories = [
 
 
 //Событие при нажатии кнопки Поиск или Enter (в обеих случаях срабатывает событие click)
-	$('.searchBtn').click(function (e) {
+	$('#searchPictureForm').submit(function (e) {
 		loadImages($('#searchId').val(), e);
 	});
 
@@ -74,7 +96,5 @@ var randomIndex = Math.round(randomCategories.length * Math.random());
 	var initializeCategory = randomCategories[randomIndex - 1];
 
 	loadImages(initializeCategory);
-
-
 
 });
